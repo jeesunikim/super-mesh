@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<h2>{{fire}}</h2>
+<h2>below the interpolation</h2>
+=======
 <h2>Welcome to Session Chat</h2>
 
 <div ng-show="!user" class='chat-toolbar'>
@@ -8,17 +12,10 @@
     </form>
 </div>
 
-<div ng-show="error">Join chat to vote ¯\(°_o)/¯</div>
-
 <li ng-repeat="message in messages">
-
-    <div ng-show="message.votes[user.auth.uid] > 0"> Sorry you can only vote once (>_<)</div>
-
-    <div ng-click="upVote($index, message)">{{message.text}}</div>
-
+    {{message.text}}
     {{message.name}}
     {{formatTime(message.time)}}
-    {{message.votecount}}
 
     <button ng-click="messages.$remove(message)">Delete</button>
 
@@ -27,3 +24,4 @@
     <input ng-model ="newMessageText" />
     <button type="submit">Send</button>
 </form>
+>>>>>>> eda72a7c2ff746e382d0e60ff076b66acdd92971
