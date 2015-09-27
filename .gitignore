@@ -4,3 +4,4 @@ npm-debug.log
 .idea/
 .idea/*
 dist
+dist/js/main.js
