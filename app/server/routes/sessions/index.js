@@ -2,10 +2,10 @@ var router = require('express').Router();
 var fs = require('fs');
 var AWS = require('aws-sdk');
 AWS.config.aregion ="us-west-2";
+//var config = require('../configure/private.config');
 module.exports = router;
-
 //Amazon AWS credentials
-AWS.config.update({accessKeyId: 'AKIAJ6AWXFKC4RVLEP2A',secretAccessKey: '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'});
+AWS.config.update({accessKeyId: process.env.KEY ,secretAccessKey: process.env.SECRET});
 
 
 router.post('/image', function(req, res, next){
@@ -31,4 +31,3 @@ console.log(req.body, "files")
 
 
 })
-

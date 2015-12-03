@@ -15,7 +15,8 @@
 					config: {
 						url: '/ideas',
 						controller: 'AdminController',
-						templateUrl: 'client/components/admin/admin.html'
+						templateUrl: 'client/components/admin/admin.html',
+						authenticate: true
 					}
 				}
 			]

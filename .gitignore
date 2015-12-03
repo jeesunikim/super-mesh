@@ -6,3 +6,5 @@ npm-debug.log
 
 dist/js/main.js
 dist/css/style.min.css
+
+app/server/routes/configure/private.config.js

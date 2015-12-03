@@ -31,6 +31,6 @@
         'sm.event',
         'sm.participant',
         'sm.signin'
-    ]);
+    ])
 
 })();
